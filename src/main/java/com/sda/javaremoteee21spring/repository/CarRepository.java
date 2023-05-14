@@ -48,10 +48,14 @@ public class CarRepository {
                         .mileage(550)
                         .fuelType(Fuel.DIESEL)
                         .insurance(false)
-                        .build();
+                        .build()
         );
     }
 
 
+    public List<Car> findAll() {
 
+        log.info("find all cars");
+        return cars;
+    }
 }
