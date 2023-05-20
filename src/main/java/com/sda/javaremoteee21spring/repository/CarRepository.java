@@ -94,4 +94,20 @@ public class CarRepository {
     }
 
 
+    public void deleteById(Long id) {
+
+        log.info("Deleting car bu id: [{}]", id);
+        cars.remove(id);
+
+    }
+
+    public boolean existById(Long id) {
+        log.info("Checking if car exist by id: [{}]", id);
+        boolean exist = cars.containsKey(id);
+        log.info("Car exist? - [{}]", exist);
+        return exist;
+    }
+
+
+
 }
