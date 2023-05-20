@@ -37,3 +37,8 @@
   - delete car (url + Http verb): DELETE /VIN; DELETE /delete-car
   - update car (url + Http verb): PATCH /VIN-patch; PATCH/update-car
 
+
+
+- Car entity: good practices
+  - 
+
