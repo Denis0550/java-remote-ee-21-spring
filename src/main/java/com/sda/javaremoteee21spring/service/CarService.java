@@ -44,8 +44,10 @@ public class CarService {
     }
 
 
-
-
-
-
+    public Car saveCar(Car carToSave) {
+        log.info("Saving object [{}]", carToSave);
+        Car savedCar = carRepository.save(carToSave);
+        log.info("Car with assigned id: [{}]", savedCar);
+        return savedCar;
+    }
 }
