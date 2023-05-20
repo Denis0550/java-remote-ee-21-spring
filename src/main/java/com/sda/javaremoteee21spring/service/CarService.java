@@ -61,4 +61,10 @@ public class CarService {
         }
 
     }
+
+    public Car replaceCarById(Car carToReplace, Long carId) {
+        log.info("replacing car by id: [{}] with content: [{}]", carId, carToReplace);
+        return carRepository.replaceById(carId, carToReplace);
+
+    }
 }
