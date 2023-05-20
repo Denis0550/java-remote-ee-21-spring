@@ -12,9 +12,9 @@
 - Model (data + operations) = Service + Repository
 
 
-- Controller ->
-- Service ->
-- Repository
+- Controller -> Get request from user and return the view
+- Service -> Business logic (what our application should do)
+- Repository -> Has access to data
 
 
 ### View - its a view which user is able to play with

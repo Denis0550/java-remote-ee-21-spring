@@ -25,4 +25,11 @@ public class CarController {
         return carService.findAllCars();
     }
 
+
+    public Car getSelectedCar() {
+        return null;
+    }
+
+
+
 }
