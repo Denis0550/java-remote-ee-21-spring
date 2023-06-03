@@ -67,4 +67,7 @@ public class CarService {
         return carRepository.replaceById(carId, carToReplace);
 
     }
+
+    public Car updateCar(Long id, Car carToUpdate) {
+    }
 }
