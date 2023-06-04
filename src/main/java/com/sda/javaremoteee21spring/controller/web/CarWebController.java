@@ -32,7 +32,7 @@ public class CarWebController {
         return "home-page";
     }
 
-    @GetMapping("/all-cars")
+    @GetMapping("/cars")
     public String  allCars(Model data) {
         log.info("All cars at html page");
 
