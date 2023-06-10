@@ -4,9 +4,6 @@ package com.sda.javaremoteee21spring.controller.rest;
 import com.sda.javaremoteee21spring.dto.ErrorResponse;
 import com.sda.javaremoteee21spring.exception.CarNotFoundException;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
-import org.springframework.http.ResponseEntity;
-
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -14,7 +11,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.time.LocalDate;
 
-@RestControllerAdvice
+@RestControllerAdvice("com.sda.javaremoteee21spring.controller.rest")
 public class CarRestAdvisor {
 
 
