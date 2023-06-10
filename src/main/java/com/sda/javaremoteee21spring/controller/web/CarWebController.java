@@ -46,7 +46,9 @@ public class CarWebController {
     @GetMapping("/cars/delete/{id}")
     public String deleteCarById(@PathVariable Long id) {
         log.info("Deleting car by id: [{}]",id);
+
         carService.deleteCarById(id);
+        // redirect creates Location header with url to go
         return "redirect:/web/cars";
     }
 
